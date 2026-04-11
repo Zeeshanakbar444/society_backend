@@ -40,7 +40,9 @@ app.use('/api/user', verifyToken, seedRoutes);
 export default app;
 
 const PORT = process.env.PORT || 5000;
-
+app.get("/"  ,(req,res)=>{
+    res.send("the app is starting now.....")
+})
 app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', environment: process.env.NODE_ENV });
 });
