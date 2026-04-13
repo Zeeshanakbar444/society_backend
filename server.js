@@ -21,7 +21,7 @@ console.log('Backend initializing in', process.env.NODE_ENV);
 
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+    origin: process.env.FRONTEND_URL || 'https://society-frontend.vercel.app',
     credentials: true
 }));
 app.use(express.json());
