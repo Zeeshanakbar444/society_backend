@@ -3,7 +3,7 @@ import prisma from '../lib/prisma.js';
 
 const router = express.Router();
 
-// Get all billls
+// Get all bill
 router.get('/', async (req, res) => {
     try {
         const bills = await prisma.bill.findMany({
