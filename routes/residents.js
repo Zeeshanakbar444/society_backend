@@ -4,7 +4,7 @@ import admin from 'firebase-admin';
 import { handlePrismaError } from '../lib/errorHandlers.js';
 
 const router = express.Router();
-
+// d
 // Get all residents
 router.get('/', async (req, res) => {
     try {
